@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const ParentDiv2 = styled.div `
+const Social = styled.div `
     margin-top: 25px;
     justify-content: center;
     display: flex;
@@ -12,4 +12,4 @@ const ParentDiv2 = styled.div `
 
 `
 
-export default ParentDiv2
+export default Social

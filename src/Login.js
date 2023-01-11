@@ -1,24 +1,20 @@
 import React from 'react'
-import StyledButton from './components/Button'
-import StyledInput from './components/Input'
 import Styledh1 from './components/h1'
-import StyledDiv from './components/div'
+import LoginDiv from './components/LoginDiv'
 import ParentDiv from './components/parent'
-import StyledDiv1 from './components/div1'
-import Button from '@mui/material/Button';
-import Input from '@mui/material/Input';
+import QuizImage from './components/QuizImage'
+import {Button,Input} from '@mui/material';
 import useStyles from './components/mui'
-import ReactDOM from "react-dom/client";
-import StyledDiv2 from './components/littlediv'
-import ParentDiv1 from './components/parentdiv1'
-import ParentDiv2 from './components/parentdiv2'
-import StyledDiv3 from './components/littlediv1'
-import StyledDiv4 from './components/littlediv2'
-import StyledDiv5 from './components/littlediv3'
-import ParentDiv3 from './components/parentdiv3'
+import Line from './components/Line'
+import ForLine from './components/ForLine'
+import Social from './components/Social'
+import ConnectGoogle from './components/ConnectGoogle'
+import ConnectFacebook from './components/ConnectFacebook'
+import GoogleLine from './components/GoogleLine'
+import Google from './components/Google'
 import Image from './components/image'
-import ParentDiv4 from './components/parentdiv4'
-import StyledDiv6 from './components/littlediv4'
+import Facebook from './components/Facebook'
+import FacebookLine from './components/FacebookLine'
 
 
 
@@ -28,32 +24,44 @@ export default function Login() {
   const classes = useStyles();
     return (
       <ParentDiv>
-        <StyledDiv1>
+      
+      {/* Quiz Image */}
+        <QuizImage>
             <img src="logo1.png" alt="" />
-        </StyledDiv1>
-        <StyledDiv>
+        </QuizImage>
+      
+      {/* Login */}
+        <LoginDiv>
           <Styledh1>Login</Styledh1>
           <Input sx={{backgroundColor: "white" }} className={classes.input} placeholder="First option"></Input>
           <Input sx={{backgroundColor: "white" }} className={classes.input} placeholder="Second option"></Input>
           <Button sx={{backgroundColor: "yellow", color: "#343285" }} style={{borderRadius: '15px'}} variant='contained' className={classes.btn}>Submit</Button>
-          <ParentDiv1>
-            <StyledDiv2 />
+      
+      {/* Or */}
+          <ForLine>
+            <Line />
             <Styledh1>OR</Styledh1>
-            <StyledDiv2 />
-          </ParentDiv1>
-          <ParentDiv2>
-            <ParentDiv3>
+            <Line />
+          </ForLine>
+
+      {/* Social */}
+          <Social>
+
+        {/* Connect with Google */}
+            <Google>
               <Image src="https://img.freepik.com/free-icon/search_318-265146.jpg?w=360"></Image>
-              <StyledDiv5></StyledDiv5>
-              <StyledDiv3>Connect with Google</StyledDiv3>
-            </ParentDiv3>
-            <ParentDiv4>
+              <GoogleLine></GoogleLine>
+              <ConnectGoogle>Connect with Google</ConnectGoogle>
+            </Google>
+
+        {/* Connect with Facebook */}
+            <Facebook>
               <Image src='facebook.png'></Image>
-              <StyledDiv6></StyledDiv6> 
-              <StyledDiv4>Connect with Facebook</StyledDiv4>
-            </ParentDiv4>
-          </ParentDiv2>  
-        </StyledDiv>
+              <FacebookLine></FacebookLine> 
+              <ConnectFacebook>Connect with Facebook</ConnectFacebook>
+            </Facebook>
+          </Social>  
+        </LoginDiv>
       </ParentDiv>
       
     )

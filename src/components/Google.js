@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const ParentDiv3 = styled.div `
+const Google = styled.div `
     padding: 5px;
     color: red;
     display: flex;
@@ -17,4 +17,4 @@ const ParentDiv3 = styled.div `
 
 `
 
-export default ParentDiv3
+export default Google

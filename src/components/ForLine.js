@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const ParentDiv1 = styled.div `
+const ForLine = styled.div `
     margin-top: 25px;
     display: flex;
     align-items: center;
@@ -10,4 +10,4 @@ const ParentDiv1 = styled.div `
 
 `
 
-export default ParentDiv1
+export default ForLine

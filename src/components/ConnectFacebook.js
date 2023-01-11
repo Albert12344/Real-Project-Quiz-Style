@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-const StyledDiv4 = styled.div `
+const ConnectFacebook = styled.div `
 
 `
 
-export default StyledDiv4
+export default ConnectFacebook

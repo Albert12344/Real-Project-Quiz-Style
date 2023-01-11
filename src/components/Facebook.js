@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const ParentDiv4 = styled.div `
+const Facebook = styled.div `
     padding: 5px;
     color: blue;
     display: flex;
@@ -17,4 +17,4 @@ const ParentDiv4 = styled.div `
 
 `
 
-export default ParentDiv4
+export default Facebook

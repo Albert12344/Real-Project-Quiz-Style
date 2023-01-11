@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const StyledDiv1 = styled.div `
+const QuizImage = styled.div `
 width:100vh;
 height:30vw;
 `
 
-export default StyledDiv1
+export default QuizImage
